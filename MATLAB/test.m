@@ -21,7 +21,7 @@ opts.zflag = false;
 opts.ntries = 1;
 opts.fevals = 1e4;
 opts.analytic = true;
-[a.Z,a.A,a.B,a.C,a.error,a.R2] = core(X,Y,opts);
+[a.Z,a.A,a.B,a.C,a.error,a.R2] = PBLDR(X,Y,opts);
 
 opts.analytic = false;
 [b.Z,b.A,b.B,b.C,b.error,b.R2] = PBLDR(X,Y,opts);
